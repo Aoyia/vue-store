@@ -14,6 +14,11 @@ import axios from 'axios'
 
 // 设置为网络api
 axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
+axios.interceptors.request.use(config =>{
+  // 未请求头对象，添加'token'验证的 Authorization 字段
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
 
 Vue.prototype.$http = axios
 

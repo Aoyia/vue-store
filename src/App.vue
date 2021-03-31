@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-   我是appvue
    <!-- 路由占位符 通过路由匹配的组件会在下面展示 -->
    <router-view></router-view>
   </div>

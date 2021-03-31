@@ -61,7 +61,6 @@ export default {
                 if(res.meta.status !== 200) return this.$message.error('登陆失败');
                 this.$message.success('登陆成功')
                 
-                console.log(res);
                 // 保存token值到客户端的sessionStorage
                 window.sessionStorage.setItem('token',res.data.token)
                 //  通过编程式导航跳转到后台主页，路由地址是 /home
