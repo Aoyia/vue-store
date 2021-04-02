@@ -17,8 +17,6 @@
           </div>
         <el-menu
           class="el-menu-vertical-demo"
-          @open="handleOpen"
-          @close="handleClose"
           background-color="#333744"
           text-color="#fff"
           active-text-color="#03A0D6"
@@ -80,7 +78,7 @@ export default {
     // 获取所有的菜单
     async getMenuList() {
       const {data:res} = await this.$http.get('menus');
-      if (res.meta.status !== 200) return this.$message.console.error(res.meta.msg);
+      if (res.meta.status !== 200) return this.$message.error(res.meta.msg);
       this.menuList = res.data;
     },
     // 折叠与展开
