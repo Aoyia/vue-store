@@ -13,7 +13,9 @@ import axios from 'axios'
 // axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 
 // 设置为网络api
-axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
+// axios.defaults.baseURL = 'http://timemeetyou.com:8889/api/private/v1/'
+axios.defaults.baseURL = 'http://www.ysqorz.top:8888/api/private/v1/'
+// http://www.ysqorz.top:8091/vueshop/reset
 // axios.defaults.baseURL = 'http://shop.liulongbin.top/api/private/v1/'
 axios.interceptors.request.use(config =>{
   // 未请求头对象，添加'token'验证的 Authorization 字段

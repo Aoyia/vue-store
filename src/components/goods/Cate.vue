@@ -42,7 +42,7 @@
           <el-tag type="warning" v-else>三级</el-tag>
         </tmplate>
         <!-- 操作 -->
-        <tmplate slot="opt" slot-scope="scope">
+        <tmplate slot="opt">
           <el-button type="primary" icon="el-icon-edit" size="mini" circle></el-button>
           <el-button type="danger" icon="el-icon-delete" size="mini" circle></el-button>
         </tmplate>
