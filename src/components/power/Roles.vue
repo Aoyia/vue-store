@@ -61,7 +61,7 @@
                     <i class="el-icon-arrow-right"></i>
                   </el-col>
                   <el-col :span="3" class="valign">
-                    <el-tag closable @close="removeRightById(scope.row ,item3.id )" type="warning" v-for="(item3 , index) in item2.children">{{item3.authName}} </el-tag>
+                    <el-tag closable @close="removeRightById(scope.row ,item3.id )" type="warning" v-for="(item3 , index3) in item2.children" :key="index3">{{item3.authName}} </el-tag>
                   </el-col>
                 </el-row>
               </el-col>
